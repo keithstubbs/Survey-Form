@@ -3,7 +3,6 @@
 }
 
 html {
-  /* background: url(https://images.unsplash.com/photo-1506976785307-8732e854ad03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1541&q=80) no-repeat center center fixed lightblue; */
   background: url(https://images.unsplash.com/photo-1504283165217-3679a64511fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80) no-repeat center center fixed lightblue;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -45,9 +44,6 @@ body {
 }
 
 #title {
-  /* display: block;
-  float: right;
-  color: white; */
   font-weight: 900;
   font-size: 3em;
   padding: 0;
@@ -56,14 +52,10 @@ body {
 }
 
 #description {
-  /* display: block;
-  float: right;
-  color: white; */
   font-weight: 200;
   padding-top: 0;
   padding: 0 0 .5em 0;
   margin-top: 0;
-  /* text-align: right; */
 }
 
 .form-wrapper {
@@ -99,7 +91,8 @@ label {
 }
 
 .contact {
-  padding: 5px 5px 0px 5px;
+  padding: 5px 5px 0px 10px;
+  margin: 10px;
 }
 
 .row {
@@ -119,18 +112,17 @@ label {
 .col1 {
   display: block;
   float: left;
-  padding: 5px 5px 0px 5px;
   margin-bottom: 0;
-  width: 50%
-  /* margin-right: min(.25em); */
+  width: 50%;
+  padding-right: 5px;
 }
 
 .col2 {
   display: block;
   float: left;
-  padding: 5px 5px 0px 5px;
   margin-bottom: 0;
-  width: 50%
+  width: 50%;
+  padding-left: 5px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -144,12 +136,18 @@ label {
 .order-type {
   width: 100%;
   text-align: left;
-  padding: 0px 5px 20px 5px;
   margin-top: 0;
 }
 
+.fieldset {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid orange;
+  border-radius: .5em;
+  min-height: 5em;
+}
+
 .fieldset-order input {
-  /* padding: 0 20px 20px; */
   margin: 0 0 20px;
   max-width: 150px;
   border: 1px solid #ccc;
@@ -170,12 +168,12 @@ label {
   border-radius: .5em;
 }
 
-.fieldset {
-  padding: 20px;
-  margin: 20px;
+.fieldset2 {
+  padding: 20px 20px 0px 20px;
+  margin: 20px 20px 0px 20px;
   border: 1px solid orange;
   border-radius: .5em;
-  min-height: 15em;
+  min-height: 16em;
 }
 
 .checkbox {
@@ -194,6 +192,10 @@ legend {
 textarea {
   width: 90%;
   height: 150px;
+}
+
+#submit {
+  cursor: pointer;
 }
 
 footer p {
